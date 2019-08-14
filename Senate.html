@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Meta Data -->
+<head>
+  <meta charset="UTF-8">
+  <title>State Senate District Analysis</title>
+    <link rel="stylesheet" href="Sketchy.css">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand text-danger btn-lg" href="/"><h1>Aᵌ</h1></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" >DISTRICT ANALYSIS</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="/County">COUNTY</a>
+                  <a class="dropdown-item" href="/Congress">CONGRESS</a>
+                  <a class="dropdown-item" href="/Senate">STATE SENATE</a>
+                  <a class="dropdown-item" href="/Assembly">STATE ASSEMBLY</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Comparison">DISTRICT SIZE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Data">DATA</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+    
+  <div class="jumbotron">
+    <!-- Linear Regression -->
+    <div class="row">
+      <div class="col-sm-12 col-md-auto col-lg-6" style=text-align:center;>
+          <p>
+            r squared = %72.00    p-value = 5.44x10^-16
+          </p>
+          <p>
+            2006: red, 2008: blue, 2010: green
+          </p>
+      </div>
+      <div class="col-sm-12 col-md-auto col-lg-6" style=text-align:center;>
+        <p>
+        r squared = %74.70     p-value = 4.75x10^-18           
+        </p>
+        <p>
+          2012: red, 2014: blue, 2016': green, 2018: black
+        </p>
+      </div> 
+    </div>
+    <!-- Linear Graphs -->
+    <div class="row">
+      <div class="col-sm-12 col-md-auto col-lg-6">
+        <img src="2006-2010 Senate District Results vs Registration.png" alt="2006-2010 State Senate District Results vs Registration">
+      </div>
+      <div class="col-sm-12 col-md-auto col-lg-6">
+        <img src="2012-2018 Senate District Results vs Registriation.jpeg" alt="2012-2018 State Senate District Results vs Registration">
+      </div>
+    </div>
+    <!-- Analysis Text -->
+    <h5 class="text-danger"> In State Senate districts, we don't see a difference before and after the non-partisan redistricting with only a %2.7 change in our R squared. However, we also have significantly less instances to observe of State Senate elections than all the other types of districts.</h5>
+    <h3><b>In Conclusion, we can see that party registration explains %72 of the election results from 2006-2010. While since 2012, party registration can explain %74 of the election results.</b></h3>
+    <h5 class="text-danger"> However, election turnout is another factor that needs to be considered as well in this context. The graphs below show the difference between registration and results of each district by election turnout of the district. In other words, if the difference is 0, that means the results and registration of the district are identical. As you can see, the higher the turnout, the more the dots converge to 0 which would explain the outliers that were not included in our R squared values.</h5>
+    <!-- Turnout Graphs -->
+    <div class="row">
+      <div class="col-sm-12 col-md-auto col-lg-6">
+        <img src="2006-2010 Senate Results and Registration vs Turnout.jpeg" alt="2006-2010 State Senate District Results and Registration by Turnout">
+      </div>
+      <div class="col-sm-12 col-md-auto col-lg-6">
+        <img src="2012-2018 Senate District Results and Registration by Turnout.jpeg" alt="2012-2018 State Senate District Results and Registration by Turnout">
+      </div>
+    </div>
+  </div>
+  <!-- Pages Preview -->
+  <div class="row jumbotron">
+      <div class="card text-white bg-dark mb-3" style="max-width: 30rem;">
+          <a href="/County">
+            <h3 class="card-header text-danger">County</h3>
+            <img style="height: 300px; width: 300px;" src="County Results vs Registration.jpeg" alt="County Graph">
+          </a>
+      </div>
+      <div class="card text-white bg-dark mb-3" style="max-width: 30rem;">
+          <a href="/Congress">
+            <h3 class="card-header text-danger">Congress</h3>
+            <img style="height: 300px; width: 300px;" src="2012-2018 Congressional District Results vs. Registration.jpeg" alt="County Graph">
+          </a>
+      </div>
+  <div class="card text-white bg-dark mb-3" style="max-width: 30rem;">
+          <a href="/Senate">
+            <h3 class="card-header text-danger">State Senate</h3>
+            <img style="height: 300px; width: 300px;" src="2012-2018 Senate District Results vs Registriation.jpeg" alt="County Graph">
+          </a>
+  </div>
+  <div class="card text-white bg-dark mb-3" style="max-width: 30rem;">
+          <a href="/Assembly">
+            <h3 class="card-header text-danger">State Assembly</h3>              
+            <img style="height: 300px; width: 300px;" src="2012-2018 Assembly District Results vs Registriation.jpeg" alt="County Graph">
+          </a>
+  </div>
+
+
+
+
+</body>
+</html>

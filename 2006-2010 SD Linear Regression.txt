@@ -1,0 +1,8 @@
+
+    Linear Regression summary
+    --------------------------
+    results diff = 1.340640863082072 reg diff + -6.178280676268004
+    r squared = %72.00094675747057
+    p-value = 5.442935383883184e-16
+    standard error = 0.11593467542646788
+    
