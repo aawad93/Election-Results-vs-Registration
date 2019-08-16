@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Meta Data -->
+<head>
+  <meta charset="UTF-8">
+  <title>District Size Analysis</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Sketchy_production.css">
+  </head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand text-danger btn-lg" href="/Election-Results-vs-Registration"><h1>Aᵌ</h1></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#" aria-haspopup="true" >DISTRICT ANALYSIS</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="County">COUNTY</a>
+              <a class="dropdown-item" href="Congress">CONGRESS</a>
+              <a class="dropdown-item" href="Senate">STATE SENATE</a>
+              <a class="dropdown-item" href="Assembly">STATE ASSEMBLY</a>
+            </div>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Comparison">DISTRICT SIZE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Data">DATA</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!-- Analysis Text -->
+<h2> District size plays a role in how effective registration is in predicting election results. As the district size grows, the more likely the possiblity to have a surprise outcome that goes against the partisan registration. As you scroll dowm, observe how the R squared decreases at each level, and how variance increases in the graphs. </h2>
+
+<div class="jumbotron">
+    <!-- Assembly Linear Graphs -->
+    <div class="row">
+      <h1 class="col-sm-12 col-md-auto col-lg-12 text-danger" style="text-align:center"> Assembly </h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-auto col-lg-6" style=text-align:center;>
+          <h4>
+              r squared = %66.93  p-value = 2.11x10^-58
+          </h4>
+          <h4>
+              2006: red, 2008: blue, 2010: green
+          </h4>
+        <img src="2006-2010 Assembly District Results vs Registration.jpeg" alt="2006-2010 Assembly District Results vs Registration">
+      </div>
+      <div class="col-sm-12 col-md-auto col-lg-6" style=text-align:center;>
+        <h4>
+          r squared = %80.74  p-value = 1.58x10^-83              
+        </h4>
+        <h4>
+          2012: red, 2014: blue, 2016': green, 2018: black
+        </h4>
+        <img src="2012-2018 Assembly District Results vs Registration.jpeg" alt="2012-2018 Assembly District Results vs Registration">
+      </div>
+    </div>
+</div>
+<div class="jumbotron">
+    <!-- Congressional Linear Graphs -->
+    <div class="row">
+        <h1 class="col-sm-12 col-md-auto col-lg-12 text-danger" style="text-align:center"> Congress </h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-auto col-lg-6" style="text-align:center">
+            <h4>
+            r squared = %61.66   p-value = 1.68x10^-34
+            </h4>
+            <h4>
+            2006: red, 2008: blue, 2010: green
+        </h4>
+        <img src="2006-2010 Congressional District Results vs Registration.jpeg" alt="2006-2010 Congressional District Results vs Registration">
+        </div>
+        <div class="col-sm-12 col-md-auto col-lg-6" style="text-align:center">
+            <h4>
+            r squared = %77.83     p-value = 3.50x10^-56            
+            </h4>
+            <h4>
+            2012: red, 2014: blue, 2016': green, 2018: black
+            </h4>
+        <img src="2012-2018 Congressional District Results vs Registration.jpeg" alt="2012-2018 Congressional District Results vs Registration">
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <!-- Senate Linear Graphs -->
+    <div class="row">
+        <h1 class="col-sm-12 col-md-auto col-lg-12 text-danger" style="text-align:center"> State Senate </h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-auto col-lg-6" style="text-align:center">
+        <h4>
+            r squared = %72.00    p-value = 5.44x10^-16
+        </h4>
+        <h4>
+            2006: red, 2008: blue, 2010: green
+        </h4>
+        <img src="2006-2010 Senate District Results vs Registration.jpeg" alt="2006-2010 State Senate District Results vs Registration">
+        </div>
+        <div class="col-sm-12 col-md-auto col-lg-6" style="text-align:center">
+            <h4>
+            r squared = %74.70     p-value = 4.75x10^-18           
+            </h4>
+            <h4>
+                2012: red, 2014: blue, 2016': green, 2018: black
+            </h4>
+        <img src="2012-2018 Senate District Result vs Registration.jpeg" alt="2012-2018 State Senate District Results vs Registration">
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron">
+        <!-- County Linear Graphs -->
+        <div class="row">
+            <h1 class="col-sm-12 col-md-auto col-lg-12 text-danger" style="text-align:center"> County </h1>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-auto col-lg-12" style=text-align:center;>
+              <h4>
+                r squared = %61.64     p-value = 3.17x10^-70
+              </h4>
+              <h4>
+                2006:yellow, 2008: purple, 2010: orange, 2012: red, 2014: blue, 2016: green, 2018: black
+              </h4>
+            <img src="County Results vs Registration.jpeg" alt="2006-2018 County Results vs Registration">
+          </div>
+        </div>
+</div>
+</body>
+</html>

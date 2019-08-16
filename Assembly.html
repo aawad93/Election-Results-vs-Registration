@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Assembly District Analysis</title>
-    <link rel="stylesheet" href="Sketchy.css">
-</head>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Sketchy_production.css">
+  </head>
 <body>
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -18,7 +19,7 @@
     <div class="collapse navbar-collapse" id="navbarColor02">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" >DISTRICT ANALYSIS</a>
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#" aria-haspopup="true" >DISTRICT ANALYSIS</a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="County">COUNTY</a>
               <a class="dropdown-item" href="Congress">CONGRESS</a>
@@ -38,32 +39,25 @@
     
     
   <div class="jumbotron">
-    <!-- Linear Regression -->
+    <!-- Linear Graph -->
     <div class="row">
       <div class="col-sm-12 col-md-auto col-lg-6" style=text-align:center;>
-          <p>
-            r squared = %66.93  p-value = 2.11x10^-58
-          </p>
-          <p>
+          <h4>
+              r squared = %66.93  p-value = 2.11x10^-58
+          </h4>
+          <h4>
               2006: red, 2008: blue, 2010: green
-          </p>
-      </div>
-      <div class="col-sm-12 col-md-auto col-lg-6" style=text-align:center;>
-        <p>
-          r squared = %80.74  p-value = 1.58x10^-83              
-        </p>
-        <p>
-          2012: red, 2014: blue, 2016': green, 2018: black
-        </p>
-      </div> 
-    </div>
-    <!-- Linear Graphs -->
-    <div class="row">
-      <div class="col-sm-12 col-md-auto col-lg-6">
+          </h4>
         <img src="2006-2010 Assembly District Results vs Registration.jpeg" alt="2006-2010 Assembly District Results vs Registration">
       </div>
-      <div class="col-sm-12 col-md-auto col-lg-6">
-        <img src="2012-2018 Assembly District Results vs Registriation.jpeg" alt="2012-2018 Assembly District Results vs Registration">
+      <div class="col-sm-12 col-md-auto col-lg-6" style=text-align:center;>
+        <h4>
+          r squared = %80.74  p-value = 1.58x10^-83              
+        </h4>
+        <h4>
+          2012: red, 2014: blue, 2016': green, 2018: black
+        </h4>
+        <img src="2012-2018 Assembly District Results vs Registration.jpeg" alt="2012-2018 Assembly District Results vs Registration">
       </div>
     </div>
     <!-- Analysis Text -->
@@ -77,7 +71,7 @@
         <img src="2006 - 2010 Assembly District Results & Registration by Turnout.jpeg" alt="2006-2010 Assembly District Results and Registration by Turnout">
       </div>
       <div class="col-sm-12 col-md-auto col-lg-6">
-        <img src="2012-2018 Assembly District Results and Registration by Turnout.jpeg" alt="2012-2018 Assembly District Results and Registration by Turnout">
+        <img src="2012-2018 Assembly District Results & Registration by Turnout.jpeg" alt="2012-2018 Assembly District Results and Registration by Turnout">
       </div>
     </div>
   </div>
